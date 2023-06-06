@@ -9,10 +9,12 @@ const mongoose = require("mongoose"); // database management
 app.use(cors());
 
 
-//Body phraser
+//Body praser
 
 
 //Configure Routes
+app.use("/user", require("./Routes/User-Route"))
+app.use("/category", require("./Routes/Category-Route"))
 
 
 app.listen(8000, '127.0.0.1', function() {
