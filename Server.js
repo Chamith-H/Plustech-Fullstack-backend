@@ -10,6 +10,7 @@ app.use(cors());
 
 
 //Body praser
+app.use(express.json())
 
 
 //Configure Routes
